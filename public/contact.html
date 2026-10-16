@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Cups2Cups</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="/">Cups<span>2</span>Cups</a>
+    <ul>
+      <li><a class="link" href="/">HOME</a></li>
+      <li><a class="link" href="/menu">MENU</a></li>
+      <li><a class="link" href="/about">ABOUT</a></li>
+      <li><a class="link active" href="/contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you.</p>
+  </header>
+
+  <section class="block">
+    <div class="grid">
+      <div class="card"><h3>Email</h3><p>hello@cups2cups.example</p></div>
+      <div class="card"><h3>Phone</h3><p>0912 345 6789</p></div>
+      <div class="card"><h3>Visit Us</h3><p>Tarlac City, Philippines</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Send a Message</h2>
+    <p class="sub">Questions, feedback, or just saying hi.</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea rows="4" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>&copy; 2026 Cups<span>2</span>Cups. Brewed with care.</footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thanks! Your message was sent.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
